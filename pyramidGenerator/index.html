@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Build your Galactic glyph</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <h1>Build your Galactic Glyph</h1>
+      <div id="input-field">
+        <label for="galactic-glyphs"
+          >Enter the cosmic code to generate the Galactic glyph:</label
+        >
+        <input type="text" id="galactic-glyphs" name="galactic-glyphs" />
+      </div>
+
+      <div id="choice">
+        <input type="radio" id="option1" name="options" value="true" />
+        <label for="option1"> Stellar Aligned</label>
+        <input type="radio" id="option2" name="options" value="false" checked />
+        <label for="option2"> Celestial Reversal</label><br />
+      </div>
+      <div id="myButtons">
+        <button id="button" onclick="myPyramidClicked()">
+          Generate pyramid
+        </button>
+        <button id="button2">reset</button>
+      </div>
+      <div class="hidden" id="pyramid"></div>
+      <video id="myVideo" autoplay muted loop>
+        <source src="media/12275368-hd_1920_1028_60fps.mp4" type="video/mp4" />
+      </video>
+      <script src="script.js"></script>
+    </main>
+  </body>
+</html>

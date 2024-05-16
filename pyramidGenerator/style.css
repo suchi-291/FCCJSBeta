@@ -1,0 +1,228 @@
+@import url("https://fonts.googleapis.com/css2?family=Jersey+25+Charted&family=Orbitron:wght@400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=VT323&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Jersey+25+Charted&family=Major+Mono+Display&family=Orbitron:wght@400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=VT323&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Jersey+25+Charted&family=Major+Mono+Display&family=Orbitron:wght@400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=VT323&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background-color: black;
+  color: white;
+  background-clip: url(media/12275368-hd_1920_1028_60fps.mp4);
+}
+
+body main {
+  height: 100vh;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+body main h1 {
+  padding-bottom: 40px;
+  font-family: "Orbitron", sans-serif;
+  letter-spacing: 2px;
+  font-size: 32px;
+  z-index: 1;
+}
+body main #choice {
+  padding-bottom: 40px;
+  font-family: "Major Mono Display", "monospace";
+  font-weight: 100;
+  color: lightgray;
+  font-size: 18px;
+  z-index: 1;
+}
+
+body main #galactic-glyphs {
+  height: 30px;
+  border: 1;
+  border-color: azure;
+  background-color: rgba(0, 0, 0, 0.039);
+  color: lightgray;
+  z-index: 1;
+}
+
+body main #input-field {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  column-gap: 20px;
+  padding-bottom: 20px;
+  font-family: "Major Mono Display", monospace;
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-left: 20px;
+  font-size: 24px;
+  z-index: 1;
+}
+
+body main #myButtons {
+  display: flex;
+  flex-direction: row;
+  column-gap: 40px;
+  z-index: 1;
+}
+
+body main #button {
+  padding: 15px 10px;
+  font-family: "Major Mono Display", monospace;
+  font-weight: bold;
+  color: rgb(0, 0, 0);
+  z-index: 1;
+}
+
+body main #button:hover {
+  background-color: rgba(255, 255, 255, 0.119);
+  color: rgb(255, 255, 255);
+}
+
+body main #button2 {
+  padding: 15px 10px;
+  font-family: "Major Mono Display", monospace;
+  font-weight: bold;
+  color: rgb(0, 0, 0);
+}
+
+body main #button2:hover {
+  background-color: rgba(255, 255, 255, 0.119);
+  color: rgb(255, 255, 255);
+}
+
+body main #pyramid {
+  font-family: "Major Mono Display", monospace;
+  padding: 40px;
+  margin-top: 80px;
+  font-size: 21px;
+  border: 10px;
+  border-color: white;
+  background-color: rgba(255, 255, 255, 0.053);
+  z-index: 1;
+}
+
+body main #myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+.hidden {
+  display: none;
+}
+
+@media only screen and (max-width: 1205px) {
+  /* Styles for screens with max-width 768px */
+  body main #input-field {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    row-gap: 20px;
+    padding-bottom: 30px;
+    font-family: "Major Mono Display", monospace;
+    margin-top: 20px;
+    font-size: 24x;
+    z-index: 1;
+    align-content: center;
+    width: 600px;
+    line-height: 40px;
+    margin-bottom: 30px;
+  }
+
+  body main #choice {
+    padding-bottom: 40px;
+    font-family: "Major Mono Display", "monospace";
+    font-weight: 100;
+    color: lightgray;
+    font-size: 24px;
+    z-index: 1;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  /* Styles for screens with max-width 768px */
+  body main #input-field {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    row-gap: 20px;
+    padding-bottom: 30px;
+    font-family: "Major Mono Display", monospace;
+    margin-top: 20px;
+    font-size: 18px;
+    z-index: 1;
+    align-content: center;
+    width: 300px;
+    line-height: 40px;
+    margin-bottom: 30px;
+  }
+
+  body main #choice {
+    padding-bottom: 40px;
+    font-family: "Major Mono Display", "monospace";
+    font-weight: 100;
+    color: lightgray;
+    font-size: 18px;
+    z-index: 1;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  /* Styles for screens with max-width 768px */
+  body main #input-field {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    row-gap: 20px;
+    padding-bottom: 30px;
+    font-family: "Major Mono Display", monospace;
+    margin-top: 20px;
+    font-size: 14px;
+    z-index: 1;
+    align-content: center;
+    width: 300px;
+    line-height: 40px;
+  }
+
+  body main #choice {
+    padding-bottom: 40px;
+    font-family: "Major Mono Display", "monospace";
+    font-weight: 100;
+    color: lightgray;
+    font-size: 14px;
+    z-index: 1;
+  }
+
+  body main #myButtons {
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+    z-index: 1;
+  }
+
+  body main #button {
+    padding: 10px 10px;
+    font-family: "Major Mono Display", monospace;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    z-index: 1;
+    font-size: 14px;
+  }
+
+  body main #button2 {
+    padding: 10px 10px;
+    font-family: "Major Mono Display", monospace;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    font-size: 14px;
+  }
+}
